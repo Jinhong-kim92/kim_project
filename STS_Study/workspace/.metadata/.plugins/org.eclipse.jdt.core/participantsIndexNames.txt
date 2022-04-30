@@ -1,0 +1,23 @@
+INDEX VERSION 1.131
+C:\DEV\STS_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2775363346.index
+\Spring_MVC_Board\src\main\java
+C:\DEV\STS_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2750978500.index
+\CouplingEx\src\main\java
+C:\DEV\STS_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3972667602.index
+\Spring_MVC_Board\src\main\java
+C:\DEV\STS_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\862658363.index
+\Model2_Board\src\main\java
+C:\DEV\STS_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\391801060.index
+\MVC_FW_Board\src\main\java
+C:\DEV\STS_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1058506044.index
+\Spring_Annotation_Board\src\main\java
+C:\DEV\STS_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3494872565.index
+\Spring_MVC_Board\src\main\java
+C:\DEV\STS_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2589054155.index
+\BusinessComponentEx\src\main\java
+C:\DEV\STS_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1850316171.index
+\Model2_Board\src\main\java
+C:\DEV\STS_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3807115744.index
+\MVC_FW_Board\src\main\java
+C:\DEV\STS_Study\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\250381330.index
+\Spring_Annotation_Board\src\main\java

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>고정된 문자열을 흘려가기 효과 주기(즉 동적인 웹 문서 만들기)</title>
+<style>
+	input { background-color:yellow; }
+</style>
+
+<script>
+	var msg = "-4차 산업혁명의 태풍이 온다. 인공지능, 빅데이터, IoT, 로봇공학, 나노기술, 양자컴퓨터-"
+	
+	//1.  문자열 앞에 for문을 이용하여 공백 60개를 붙인다.
+	for(i=0; i<60; i++){
+		msg = " " + msg
+	}	
+	/*
+		2.  처음에는 공백 60개만 보여주고
+        3.  맨 앞에 있는 공백을 문자열 맨 뒤에 붙인다. 을 해결하는 함수 만들기
+	*/
+	function scrollTrend() {
+		document.myForm.trend.value = msg.substring(0,60)
+		msg = msg.substring(1,msg.length) + msg.substring(0,1)
+		//재귀적 호출 => 함수 안에서 자기 자신 함수를 호출하는 것
+		//두 번째 인자값은 밀리세컨드(ms) 즉 1/1000초 단위이다. 
+		//=> 100/1000 = 0.1초(지연시간) 후에
+		//scrollTrend() 함수를 바로 실행하는 것이 아니라 지연 시간후에 실행시켜라!!
+		timevalue = setTimeout(scrollTrend, 100)
+	}
+	function stopTrend(){
+		//clearTimeout() 함수는 setTimeout() 함수가 시작하면서 반환한 timevalue를
+		//이용하여 예약된 타이머를 취소할 수 있는 기능을 가지고 있다.
+		clearTimeout(timevalue)
+	}	
+</script>
+</head>
+<body onload="scrollTrend()">
+	<form name="myForm">
+		<table>
+			<tr>
+				<td><h3>IT 트랜드</h3></td>
+				<td>
+					<input type="text" name="trend" size="70"
+					       onMouseOver="stopTrend()"
+					       onMouseOut="scrollTrend()"/>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

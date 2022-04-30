@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>배열의 문자열들을 마치 타이핑 치듯이 효과 주기 예제</title>
+<style>
+	input { background-color:yellow; }
+</style>
+<script>
+    showtext = new Array(8);
+
+    showtext[0] = "본 회사의 설립목적은"
+    showtext[1] = "기업간 전자상거래를 위한 B2B Solution을 보유한"
+    showtext[2] = "미래 정보화 사회의 구축을 선도하는 회사가 되고자 합니다."
+    showtext[3] = "경영이념은"
+    showtext[4] = "항상 창조적이고 도전적인 기업문화 선도"
+    showtext[5] = "꿈과 희망을 실현하려는 도전"
+    showtext[6] = "기술 혁신을 통한 변화"
+    showtext[7] = "자유로우며 창조적인 사고"
+    
+    //필요한 전역 변수 선언 및 초기화
+    var index = 0
+    var position = 0
+    var len = 8
+    
+    function startTyping(){
+    	document.myForm.field.value = showtext[index].substring(0,position)+"_"
+    	
+    	if(position == showtext[index].length){
+    		position = 0
+    		index++
+    		if(index == len){
+    			index = 0
+    		}
+    		timeout = setTimeout("startTyping()", 1000)
+    	}else{
+    		position++
+    		timeout = setTimeout("startTyping()", 100)
+    	}    	
+    }
+    function stopTyping(){
+    	clearTimeout(timeout)
+    }
+</script>   
+</head>
+<body onload="startTyping()">
+	<h2>타이핑하는 것처럼 문자열 보여주기 </h2>
+	<form name="myForm">
+		<input type="text" name="field" size="80"
+		       onMouseOver="stopTyping()" onMouseOut="startTyping()"/>
+	</form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,10 @@
+package 오라클연동;
+
+public class SelectTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

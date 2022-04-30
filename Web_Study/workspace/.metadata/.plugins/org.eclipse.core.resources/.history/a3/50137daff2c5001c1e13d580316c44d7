@@ -1,0 +1,18 @@
+/**
+ * 
+ * String 클래스와 StringBuffer 클래스의 차이점
+ *
+ */
+public class StringbufferTest {
+	public static void main(String[] args) {
+		String string_data_var = "ABC";
+		System.out.println(System.identityHashCode(string_data_var));
+		//366712642 메모리 주소값 => "ABC" 스트링객체의 주소값
+		
+		string_data_var += "DEF";
+		System.out.println(System.identityHashCode(string_data_var));
+		//1829164700
+
+	}
+
+}

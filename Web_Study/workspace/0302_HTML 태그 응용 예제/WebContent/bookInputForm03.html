@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>도서 등록 폼 만들기 => CSS 구조 선택자를 적용한 코딩</title>
+<style>
+	p { text-align:center; }
+	tr td:nth-child(1) { width:100; background-color:orange; text-align:center;}
+	tr td:nth-child(2) { width:400; }
+</style>
+</head>
+<body>		
+	<p>
+		<b>도서 등록</b>
+	</p>	
+	<form name="writeForm" method="POST" action="bookRegisterPro.jsp"
+	      enctype="multipart/form-data">
+	  <table width="500" border="1" cellspacing="0" cellpadding="0"
+	         align="center">
+	    <tr>
+	    	<td>분류 선택</td>
+	    	<td>
+	    		<select name="book_kind">
+	    			<option selected>도서 선택</option>
+	    			<option value="100">문학</option>
+	    			<option value="200">컴퓨터</option>
+	    			<option value="300">경영</option>
+	    			<option value="400">경제</option>
+	    			<option value="500">심리학</option>
+	    			<option value="600">철학</option>
+	    			<option value="700">언어학</option>
+	    			<option value="800">기타</option>
+	    		</select>
+	    	</td>
+	    </tr> 
+	    <tr>
+	    	<td>제 목</td>
+	    	<td>
+	    		<input type="text" size="50" name=book_title"/>	    		
+	    	</td>
+	    </tr> 
+	    <tr>
+	    	<td>가 격</td>
+	    	<td>
+	    		<input type="text" size="10" name=book_price"/>원</td>
+	    </tr>
+	    <tr>
+	    	<td>수 량</td>
+	    	<td>
+	    		<input type="text" size="10" name=book_count"/>권</td>
+	    </tr> 
+	    <tr>
+	    	<td>저 자</td>
+	    	<td>
+	    		<input type="text" size="20" name=author"/></td>
+	    </tr> 
+	    <tr>
+	    	<td>출판사</td>
+	    	<td>
+	    		<input type="text" size="20" name=publishing_company"/></td>
+	    </tr> 
+	    <tr>
+	    	<td>출판일</td>
+	    	<td>
+	    		<select name="publishing_year">
+	    			<option selected>년</option>
+       						 <option>2022</option>
+       						 <option>2021</option>
+     						 <option>2020</option>
+      						 <option>2019</option>
+      						 <option>2018</option>
+      						 <option>2017</option>
+      						 <option>2016</option>
+      						 <option>2015</option>
+      						 <option>2014</option>
+      						 <option>2013</option>
+      						 <option>2012</option>
+      						 <option>2011</option>
+      						 <option>2010</option>
+     					 </select>
+     					 <select>
+       						 <option selected>월</option>
+       						 <option>1</option>
+       						 <option>2</option>
+     						 <option>3</option>
+      						 <option>4</option>
+      						 <option>5</option>
+      						 <option>6</option>
+      						 <option>7</option>
+      						 <option>8</option>
+      						 <option>9</option>
+      						 <option>10</option>
+      						 <option>11</option>
+      						 <option>12</option>
+     					 </select>
+
+     					 <select>
+       						 <option selected>일</option>
+       						 <option>1</option>
+       						 <option>2</option>
+     						 <option>3</option>
+      						 <option>4</option>
+      						 <option>5</option>
+      						 <option>6</option>
+      						 <option>7</option>
+      						 <option>8</option>
+      						 <option>9</option>
+      						 <option>10</option>
+      						 <option>11</option>
+      						 <option>12</option>
+      						 <option>13</option>
+      						 <option>14</option>
+      						 <option>15</option>
+      						 <option>16</option>
+      						 <option>17</option>
+      						 <option>18</option>
+      						 <option>19</option>
+      						 <option>20</option>
+      						 <option>21</option>
+      						 <option>22</option>
+      						 <option>23</option>
+      						 <option>24</option>
+      						 <option>25</option>
+      						 <option>26</option>
+      						 <option>27</option>
+      						 <option>28</option>
+      						 <option>29</option>
+      						 <option>30</option>
+      						 <option>31</option>
+     					 </select>
+	    </tr> 
+	    <tr>
+	    	<td>이미지</td>
+	    	<td>
+	    		<input type="file" name="book_image"/>
+	    	</td>
+	    </tr>
+	    <tr>
+	    	<td>내 용</td>
+	    	<td>
+	    		<textarea name="book_content" rows="13" cols="40"></textarea>
+	    	</td>
+	    </tr> 
+	    <tr>
+	    	<td>할인율</td>
+	    	<td>
+	    		<input type="text" name="discount_rate" size="10"/>%
+	    	</td>
+	    </tr> 
+	    <tr>
+	    	<td colspan="2" bgcolor="orange" align="center">
+	    		<input type="submit" value="도서 등록"/>&nbsp;&nbsp;&nbsp;
+	    		<input type="reset" value="다시작성"/>	    		
+	    	</td>
+	    </tr>                    
+	  </table>    
+	</form>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

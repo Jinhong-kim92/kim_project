@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
+
+	<!-- 의존성 주입(DI)을 적용하기 위해서 필요 설정 -->
+	<context:component-scan base-package="com.company.business"></context:component-scan>	
+	
+	<!-- 관점 지향 프로그래밍(AOP)를 적용하기 위해서 필요 설정 -->
+	<bean id="log" class="com.company.business.common.LogAdvice"></bean>
+	<aop:config>
+		<aop:pointcut id="allPointcut" expression="execution(* com.company.business..*Impl.*(..))" />
+		<aop:aspect ref="log">
+			<aop:before pointcut-ref="allPointcut" method="printLog" />
+		</aop:aspect>
+	</aop:config>		
+</beans>
+
+
+
+
+
+

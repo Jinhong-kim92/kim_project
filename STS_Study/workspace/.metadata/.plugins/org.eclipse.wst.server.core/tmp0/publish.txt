@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Wed Apr 27 17:29:08 KST 2022
+org.eclipse.jst.jee.server\:Model2_Board=C\:\\DEV\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\Model2_Board
+org.eclipse.jst.jee.server\:MVC_FW_Board=C\:\\DEV\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\MVC_FW_Board
+org.eclipse.jst.jee.server\:Spring_MVC_Board=C\:\\DEV\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\Spring_MVC_Board
+org.eclipse.jst.jee.server\:Spring_Annotation_Board=C\:\\DEV\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\Spring_Annotation_Board

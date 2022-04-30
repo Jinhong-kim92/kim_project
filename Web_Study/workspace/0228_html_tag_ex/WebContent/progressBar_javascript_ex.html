@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>자바스크립트를 적용하여 프로그래스바 구현</title>
+</head>
+<style>
+	body { background: black;
+	       text-align: center;}
+	.container { margin: 200px 50px; 
+	             background: rgb(255, 254, 254);}  
+	.prog { width:500px; background: rgb(189, 177, 177);}   
+	.progs { width:10%;
+	         height:50px;
+	         background: rgb(225, 149, 240);
+	         color:#fff;
+	         text-align:center;
+	         line-height:50px;}              
+</style>
+
+<!-- <script> 태그의 위치는 <head> 태그 안이나, <body> 안에 올 수 있다. -->
+<body>
+	<div class="container">
+		<h2>프로그레스 바 구현</h2>
+		<div class="prog">
+			<div class="progs" id="progressing">5%</div>
+		</div>
+		<button onClick="moveBtn()">클릭하세요</button>
+		<br />
+	</div>
+	<script>
+		function moveBtn() {
+			var ele = document.getElementById('progressing')
+			var width = 5
+			var id = setInterval(frame, 50)
+			
+			function frame() {
+				if(width >= 100) {
+					clearInterval(id)
+				}else{
+					width++
+					ele.style.width=width+"%"
+					ele.innerHTML=width+"%"
+				}
+			}
+		}
+	</script>
+</body>
+</html>
+
+
+
+

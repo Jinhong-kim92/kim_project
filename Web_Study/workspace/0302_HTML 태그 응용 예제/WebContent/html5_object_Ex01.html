@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>HTML5에서 추가된 객체 => email 객체</title>
+</head>
+<style>
+	form { width:400px; }
+</style>
+<body>
+	<form name="myForm">
+		<fieldset>
+			<legend>개인 정보 입력</legend>
+			<ol>
+				<li>
+					<label for="name">이름</label>
+					<input id="name" type="text" required autofocus />					
+				</li>
+				
+				<li>
+					<label for="email">이메일</label>
+					<input id="email" type="email" 
+					       required autocomplete="on"
+					       placeholder="example@domain.com"/>					       
+				</li>
+				
+				<li>
+					<label for="phone">핸드폰번호</label>
+					<input id="phone" placeholder="010-1111-1111"
+					       pattern="(010)-[0-9]{4}-[0-9]{4}" />					       
+				</li>
+			</ol>
+		</fieldset>
+		<fieldset>
+			<input type="submit" value="등록하기"/>
+		</fieldset>
+	</form>	
+</body>
+</html>
+
+

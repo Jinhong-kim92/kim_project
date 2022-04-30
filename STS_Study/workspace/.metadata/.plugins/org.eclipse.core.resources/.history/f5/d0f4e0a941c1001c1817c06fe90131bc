@@ -1,0 +1,60 @@
+package com.company.business.Impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.company.business.board.BoardDO;
+import com.company.business.board.BoardService;
+import com.company.business.common.LogAdvice;
+
+//다형성 => 인터페이스를 적용하여 해결한다.
+
+//비즈니스 로직을 처리하는 클래스
+@Service("boardService")
+public class BoardServiceImpl implements BoardService{  //구현 클래스
+	//[중요]
+	@Autowired
+	private BoardDAO boardDAO;    //스프링 컨테이너가 이미 만들어진 객체를 의존성 주입(DI)
+	//새로 추가
+	private LogAdvice log;        //스프링 컨테이너가 이미 만들어진 객체를 의존성 주입(DI)
+	
+	//생성자
+	public BoardServiceImpl() {
+		log = new LogAdvice();
+	}
+
+	@Override
+	public void insertBoard(BoardDO boardDO) {
+		//추가
+		log.printLog();
+		boardDAO.insertBoard(boardDO);		
+	}
+
+	@Override
+	public void updateBoard(BoardDO boardDO) {
+		
+		//boardDAO.updateBoard(boardDO);
+	}
+
+	@Override
+	public void deleteBoard(BoardDO boardDO) {
+		
+		//boardDAO.deleteBoard(boardDO);
+	}
+
+	@Override //재정의
+	public List<BoardDO> getBoardList() {		
+		return boardDAO.getBoardList();
+	}
+
+	@Override
+	public BoardDO getBoard(BoardDO boardDO) {
+		
+		//return boardDAO.getBoard(boardDO);;
+	}
+
+	
+
+}

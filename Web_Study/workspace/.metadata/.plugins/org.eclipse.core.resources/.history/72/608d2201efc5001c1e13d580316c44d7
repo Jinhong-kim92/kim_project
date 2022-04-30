@@ -1,0 +1,14 @@
+/**
+ * 
+ * String 클래스와 StringBuffer 클래스의 차이점
+ *
+ */
+public class StringbufferTest {
+	public static void main(String[] args) {
+		String string_data_var = "ABC";
+		System.out.println(System.identityHashCode(string_data_var));
+		
+
+	}
+
+}

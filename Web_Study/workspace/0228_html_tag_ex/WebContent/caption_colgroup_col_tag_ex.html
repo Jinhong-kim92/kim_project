@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>[중요] caption, colgroup, col 태그 예제 => 게시판 목록 보여주기 화면</title>
+</head>
+<body>
+	<table width="800" border="1" align="center"
+	       cellspacing="0" cellpadding="0">
+		<caption>게시글 목록(전체게시글: )</caption> 
+		<!-- colgroup 태그는 테이블 헤더 고정하기 -->
+		<!-- col 태그는 하나의 열에 있는 모든 셀에 같은 스타일을 적용할 때사용, 닫는 태그 없음  -->
+		<colgroup>
+			<col width="50">
+			<col width="350">
+			<col width="100">
+			<col width="140">
+			<col width="60">
+			<col width="100">
+		</colgroup>
+		<thead>
+			<tr style="background-color:orange">
+				<th>번호
+				<th>제목
+				<th>작성자
+				<th>작성일
+				<th>조회수
+				<th>IP주소				
+			</tr>
+			<tr>
+				<td>1001</td>
+				<td>게시판구현</td>
+				<td>홍길동</td>
+				<td>2022/03/02</td>
+				<td>5</td>
+				<td>120.0.0.1</td>
+			</tr>
+		</thead>      
+	</table>
+</body>
+</html>

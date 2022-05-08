@@ -24,7 +24,6 @@ class autoTrade :
         now = datetime.datetime.now() # 현재 시간
         slackBot.message("자동 매매 프로그램이 시작되었습니다\n시작 시간 : " + str(now) + "\n매매 대상 : " + self.ticker + "\n시작 자산 : " + str(self.start_cash))
         openTime = datetime.datetime(now.year, now.month, now.day) + datetime.timedelta(days=1, hours=9, seconds=10) # 09:00:10
-        return 
 
         while True :
             try :

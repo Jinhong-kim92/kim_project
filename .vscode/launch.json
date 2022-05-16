@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Ex_2",
+            "request": "launch",
+            "mainClass": "Ex_2",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_1",
+            "request": "launch",
+            "mainClass": "Ex_1",
+            "projectName": ""
+        },
+        {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",

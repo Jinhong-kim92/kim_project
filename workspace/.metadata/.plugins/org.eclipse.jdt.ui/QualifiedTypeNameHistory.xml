@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.JCheckBoxMenuItem"/>
-<fullyQualifiedTypeName name="javax.swing.JMenu"/>
-<fullyQualifiedTypeName name="javax.swing.JMenuItem"/>
-<fullyQualifiedTypeName name="javax.swing.JTextArea"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.function.Consumer"/>
 <fullyQualifiedTypeName name="실습문제3회.MyClass"/>
 <fullyQualifiedTypeName name="실습문제3회.Person"/>
@@ -58,6 +52,12 @@
 <fullyQualifiedTypeName name="javax.swing.JLabel"/>
 <fullyQualifiedTypeName name="javax.swing.JTextField"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="Solution"/>
+<fullyQualifiedTypeName name="Solutionv"/>
+<fullyQualifiedTypeName name="Solutionc"/>
+<fullyQualifiedTypeName name="ex.Solutionb"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="ex.Solutionn"/>
+<fullyQualifiedTypeName name="Solution"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
 </qualifiedTypeNameHistroy>

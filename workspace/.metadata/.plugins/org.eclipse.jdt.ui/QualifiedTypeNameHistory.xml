@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.function.Consumer"/>
-<fullyQualifiedTypeName name="실습문제3회.MyClass"/>
 <fullyQualifiedTypeName name="실습문제3회.Person"/>
 <fullyQualifiedTypeName name="스트림응용_학생평균점수구하기.Student"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.stream.Stream"/>
 <fullyQualifiedTypeName name="java.util.stream.IntStream"/>
 <fullyQualifiedTypeName name="java.util.OptionalDouble"/>
@@ -55,9 +52,12 @@
 <fullyQualifiedTypeName name="Solutionv"/>
 <fullyQualifiedTypeName name="Solutionc"/>
 <fullyQualifiedTypeName name="ex.Solutionb"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="ex.Solutionn"/>
-<fullyQualifiedTypeName name="Solution"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="Solution"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

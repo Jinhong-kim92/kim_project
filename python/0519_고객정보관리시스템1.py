@@ -119,6 +119,10 @@ def refreshTreeview(data_list):
     deleteTreeData()
 
     refreshTreeData(data_list)
+    
+def outputEvtHandler():
+    print ("전체보기")
+    refreshTreeData(data_list)
 
     
 
@@ -165,14 +169,52 @@ def modifyEvtHandler():
 
         messagebox.showinfo('경고', '찾는 정보가 없습니다.') 
 
+def searchEvtHandler():
+    print("이름검색..")
+    sname = entry_name.get()
+    if sname ==  "":
+        messagebox.showinfo("경고", "검색할 이름 입력.")
+        return
+    
+    search_data_list = []
+    
+    for data in data_list:
+        try:
+            idex = data.index(sname)
+            search_data_list.append(data)
+        except:
+            pass # 예외가 발생 했을때 처리하지 않고 회피하는법
+                
+    if search_data_list == []:
+        messagebox.showinfo("경고","찾는 정보 없음")
+        return
+    refreshTreeview(search_data_list)
+    
+def deleteEvtHandler():
+    print("삭제")
+    sname = entry_name.get()
+    if sname == "":
+        messagebox.showinfo("경고","삭제할 이름을 입력하세요!")
+        return
+    
+    idex = -1
+    for data in data_list:
+        try:
+            idx = data.index(sname)
+            del data_list[data_list.index(data)]
+            refreshTreeview(data_list)
+        except:
+            pass
+    if idx == -1:
+        messagebox("경고","찾는 정보가 없습니다.")
 
     
 
-btn_output = Button(panedWindow, text = "전체보기")
+btn_output = Button(panedWindow, text = "전체보기", command = outputEvtHandler)
 btn_input = Button(panedWindow, text = "추가", command = inputEvtHandler)
-btn_search = Button(panedWindow, text = "이름 검색")
+btn_search = Button(panedWindow, text = "이름 검색", command = searchEvtHandler)
 btn_modify = Button(panedWindow, text = "수정", command = modifyEvtHandler)
-btn_delete = Button(panedWindow, text = "삭제")
+btn_delete = Button(panedWindow, text = "삭제", command = deleteEvtHandler)
 
 panedWindow.add(btn_output)
 panedWindow.add(btn_input)

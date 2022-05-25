@@ -1,10 +1,9 @@
-package ex;
-
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-class Solutionv {
+class Solution {
 	public String solution(String[] participant, String[] completion) {
 		String answer = "";
 		HashMap<String, Integer> map = new HashMap<>();
@@ -13,29 +12,25 @@ class Solutionv {
 		for (String player : completion)
 			map.put(player, map.get(player) - 1);
 		Iterator<Map.Entry<String, Integer>> iter = map.entrySet().iterator();
-		while(iter.hasNext()) {
+
+		while (iter.hasNext()) {
 			Map.Entry<String, Integer> entry = iter.next();
-			if(entry.getValue()!=0) {
+			if (entry.getValue() != 0) {
 				answer = entry.getKey();
 				break;
 			}
 		}
-		
-
-		
 
 		return answer;
 	}
-
 }
 
-public class Ex_3 {
+public class Ex1 {
 
 	public static void main(String[] args) {
-
 		String[] part = { "leo", "kiki", "eden" };
 		String[] comp = { "eden", "kiki" };
-		Solutionv sol = new Solutionv();
+		Solution sol = new Solution();
 		System.out.println(sol.solution(part, comp));
 
 	}

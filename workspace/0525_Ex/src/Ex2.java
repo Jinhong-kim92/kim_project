@@ -1,32 +1,31 @@
-package ex;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
-class Solutionn {
+class Solutionx {
 	public boolean solution(String[] phone_book) {
-
-		boolean answer = true;
-		HashMap<String , Integer> map = new HashMap<>();
-		for(int i = 0 ; i<phone_book.length; i++)
-			map.put(phone_book[i], i);
+		
+		HashMap<String, Integer> map = new HashMap<>();
 		for(int i = 0; i<phone_book.length; i++)
-			for(int j = 1; j<phone_book[i].length(); j++) {
+			map.put(phone_book[i],1);
+		for(int i =0; i<phone_book.length; i++)
+			for(int j =1; j<phone_book[i].length(); j++)
 				if(map.containsKey(phone_book[i].substring(0, j)))
 					return false;
-			}
-		
+
+
+				
 		return true;
 
 	}
-
 }
 
-public class Ex_5 {
+public class Ex2 {
 
 	public static void main(String[] args) {
 
 		String[] phone_book = { "119", "97674223", "1195524421" };
-		Solutionn sol = new Solutionn();
+		Solutionx sol = new Solutionx();
 		System.out.println(sol.solution(phone_book));
 
 	}
